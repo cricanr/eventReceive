@@ -4,6 +4,8 @@ This is a HTTP Play framework REST.API service implemented in Scala that receive
 and will afterwards cast these events to Google Protocol Buffer events and send them over a TCP/IP using
 MQTT protocol. 
 
+The events received which are sent over the MQTT queue are received by a Kotlin service that will handle them and persist them to a datasource. 
+The transfer is done using PROTOBUF format. Link to repo: https://github.com/cricanr/eventPersist
 
 Architecture & code notes: 
 ======
