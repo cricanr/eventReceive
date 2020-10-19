@@ -1,0 +1,10 @@
+message EventsPB {
+    message EventPB {
+        required uint64 timestamp = 1;
+        required uint32 userId = 2;
+        required string event = 3;
+    }
+
+    repeated EventPB eventPB = 1;
+}
+
